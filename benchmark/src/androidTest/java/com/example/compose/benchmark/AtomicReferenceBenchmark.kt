@@ -15,7 +15,7 @@ class AtomicReferenceBenchmark {
     val benchmarkRule = BenchmarkRule()
     
     private val atomicReference = AtomicReference(false)
-    private val atomicRef = atomic(false)
+    private val atomicRef = atomic<Boolean>(false)
     
     @Test
     fun atomicReference_compareAndSet() {
